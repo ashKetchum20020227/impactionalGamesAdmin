@@ -1,0 +1,98 @@
+p {
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.websiteVisitsPopupOuter {
+    width: 100%;
+    /* height: 100vh; */
+    height: 185vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 2;
+}
+
+.websiteVisitsPopupInner {
+    /* border: 1px solid rgb(124, 122, 122); */
+    display: flex;
+    flex-direction: column;
+    /* position: absolute;
+    top: 10%;
+    left: 45%; */
+    position: sticky;
+    top: 5%;
+    left: 30%;
+    margin: -50px 0 0 -100px;
+    background-color: #17181Bff;
+    padding: 20px;
+    width: 42%;
+    max-width: 42%;
+    min-height: 90vh;
+    max-height: 90vh;
+    border-top-right-radius: 10%;
+    box-shadow: 0 -5px 20px -5px black;
+    padding: 10px 20px;
+    color: white;
+    overflow-y: scroll;
+}
+
+.websiteVisitsPopupInner::-webkit-scrollbar {
+    display: none;
+}
+
+.websiteVisitsPopupInner header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.websiteVisitsPopupInner table {
+    border-collapse: collapse;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.websiteVisitsPopupInner th {
+    border-bottom: 1px solid rgb(126, 124, 124);
+    font-size: 16px;
+    text-align: left;
+}
+
+.websiteVisitsPopupInner td, th {
+    border: none;
+    text-align: left;
+    padding: 8px;
+}
+
+.websiteVisitsPopupInner td {
+    font-size: 14px;
+}
+
+.websiteVisitsPopupInner table .tableUserId {
+    cursor: pointer
+}
+
+.websiteVisitsPopupInner table .tableUserId:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 700px) {
+    .websiteVisitsPopupInner {
+        width: 90%;
+        max-width: 90%;
+        position: sticky;
+        top: 5%;
+        left: 30%;
+        margin: -50px 0 0 -100px;
+    }
+}

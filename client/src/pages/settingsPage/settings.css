@@ -1,0 +1,264 @@
+
+.globalSettingsMainContainer {
+    background-color: #161819ff;
+    color: white;
+    font-family: "Poppins";
+    min-height: 100vh;
+    margin-left: 15%;
+}
+
+.globalSettingsMainContainer header {
+    font-size: 36px;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.globalSettingsMainContainer header span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.globalSettingsMainContainer header span:hover {
+    color: #52C71Bff
+}
+
+.globalSettingsMain {
+    display: grid;
+    grid-template-columns: 0.4fr 1.6fr;
+    gap: 20px;
+    padding-left: 30px;
+    padding-bottom: 50px;
+}
+
+.globalSettingsMainContainer .globalSettingsSidebar {
+    background-color: #31343Cff;
+    min-width: 30%;
+}
+
+.globalSettingsSidebar {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+.globalSettingsSidebar p {
+    margin-bottom: 5px;
+    padding: 10px;
+    font-size: medium;
+    color: #828B97ff;
+    cursor: pointer;
+}
+
+.globalSettingsSidebar p:hover {
+    color: white;
+}
+
+.globalSettingsSidebar .selected {
+    font-size: large;
+    font-weight: bolder;
+    background-color: #24262Bff;
+    color: white;
+}
+
+.globalSettingsMain .themeButton {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    gap: 20px;
+    align-items: center;
+}
+
+.globalSettingsMain .switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 20px;
+}
+
+/* Hide default HTML checkbox */
+.globalSettingsMain .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.globalSettingsMain .slider:before {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #52C71Bff;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #52C71Bff;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.globalSettingsDiv {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #31343Cff;
+    margin-right: 30px;
+    min-height: 50vh;
+}
+
+.globalSettingsDiv > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+    border-bottom: 1px solid #828B97ff;;
+}
+
+.globalSettingsDiv > div:last-child {
+    border: none;
+}
+
+.privacySettings > div > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.privacySettings > div > div p {
+    color: #828B97ff;
+}
+
+.securitySettings form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    width: 100%;
+}
+
+.securitySettings form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.securitySettings form input {
+    width: 50%;
+    height: 25px;
+    margin-top: 10px;
+    background-color: #24262Bff;
+    color: white;
+    padding: 10px;
+    font-size: large;
+}
+
+.securitySettings form button {
+    width: 20%;
+    height: 35px;
+    font-size: large;
+    border-radius: 10px;
+    border: none;
+    background-color: #52C71Bff;
+    color: white;
+    cursor: pointer;
+}
+
+.securitySettings form button:hover {
+    box-shadow: 0 0 10px #52C71Bff;
+}
+
+
+@media only screen and (min-width: 200px) and (max-width: 700px) {
+    .settingsSidebarContainer {
+        display: none;
+    }
+
+    .globalSettingsMainContainer {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .globalSettingsMainContainer header {
+        font-size: 24px;
+    }
+
+    .globalSettingsMain {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding-left: 30px;
+        padding-bottom: 50px;
+    }
+
+    .globalSettingsMainContainer .globalSettingsSidebar {
+        background-color: #31343Cff;
+        min-width: 90%;
+        max-width: 90%;
+    }
+
+    .globalSettingsDiv {
+        min-width: 90%;
+        max-width: 90%;
+    }
+
+    .securitySettings form button {
+        width: 70%;
+        height: 35px;
+        font-size: large;
+        border-radius: 10px;
+        border: none;
+        background-color: #52C71Bff;
+        color: white;
+        cursor: pointer;
+    }
+
+    .securitySettings form input {
+        width: 90%;
+        height: 25px;
+        margin-top: 10px;
+        background-color: #24262Bff;
+        color: white;
+        padding: 10px;
+        font-size: large;
+    }
+
+    .securitySettings form {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+        width: 100%;
+    }
+}

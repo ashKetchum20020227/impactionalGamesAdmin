@@ -1,0 +1,221 @@
+
+.homeWrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.homeMainContainer {
+    background-color: #161819ff;
+    color: white;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 82%;
+    max-width: 82%;
+    margin-left: 15%;
+}
+
+.homeRow1 {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    /* max-height: 400px; */
+    margin-bottom: 80px;
+}
+
+.homeRow1 .mostPlayed {
+    background-color: #252728ff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.homeRow1 .mostPlayedGamesContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.homeRow1 .websiteCount {
+    background-color: #252728ff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: left;
+    max-height: fit-content;
+}
+
+.homeRow1 .mostPlayed .game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 50px;
+}
+
+.homeRow1 .mostPlayed .game img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.homeRow1 .mostPlayed .game h3 {
+    margin: 0;
+    margin-top: 10px;
+}
+
+.transactionsContainer {
+    background-color: #252728ff;
+    padding: 50px;
+    border-radius: 10px;
+    max-height: 300px;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+.graphsContainer {
+    background-color: #252728ff;
+    border-radius: 10px;
+    padding: 10px
+}
+
+.transactionsContainer h1 {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.homeWrapper table {
+    border-collapse: collapse;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeWrapper th {
+    border-bottom: 1px solid rgb(126, 124, 124);
+    font-size: 24px;
+}
+
+.homeWrapper td, th {
+    border: none;
+    text-align: left;
+    padding: 8px;
+}
+
+.homeWrapper td {
+    font-size: 18px;
+}
+
+.homeWrapper .user {
+    cursor: pointer;
+}
+
+.homeWrapper .user:hover {
+    color: rgb(63, 116, 250);
+}
+
+.homeRow2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.registeredUsersCount {
+    background-color: #252728ff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: left;
+    max-height: fit-content;
+}
+
+.calendarContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.calendarContainer div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px
+}
+
+
+/* tr:nth-child(even) {
+    background-color: #161819ff;
+} */
+
+@media only screen and (min-width: 200px) and (max-width: 700px) {
+
+    .homeWrapper {
+        max-width: 100%;
+    }
+
+    .homeMainContainer {
+        background-color: #161819ff;
+        color: white;
+        padding: 22px;
+        display: flex;
+        flex-direction: column;
+        min-width: 90%;
+        max-width: 90%;
+        margin-left: 0;
+    }
+
+    .homeRow1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        max-height:  max-content;
+        height:  max-content;
+        min-height: max-content;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .homeRow2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 0px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-height:  max-content;
+        height:  max-content;
+        min-height: max-content;
+    }
+
+    .homeSidebarContainer {
+        display: none;
+    }
+    
+    .graphsContainer {
+        width: 95%;
+        height: 40vh;
+    }
+
+    .registeredUsersCount {
+        width: 90%;
+        margin-left: 0px;
+    }
+
+    .homeRow1 .websiteCount {
+        margin-left: 0px;
+    }
+
+    .homeWrapper table {
+        width: 95%;
+    }
+}

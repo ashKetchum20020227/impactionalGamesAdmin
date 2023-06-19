@@ -1,0 +1,146 @@
+
+.loginWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: white;
+    background-color: white;
+}
+
+.loginWrapper .formContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.loginWrapper form {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: rgb(63, 116, 250);
+    width: 60%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-height: 50vh;
+}
+
+.loginWrapper form header {
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.loginWrapper form > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginWrapper form label {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.loginWrapper form input {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    width: 75%;
+    height: 25px;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.loginWrapper form input:focus {
+    box-shadow: 0 0 10px tomato;
+}
+
+.loginWrapper form button {
+    background-color: #52C71Bff;
+    margin-top: 20px;
+    width: 40%;
+    height: 38px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.loginWrapper form button:hover {
+    box-shadow: 0 0 10px #52C71Bff;
+}
+
+.loginWrapper .logoContainer {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #252728ff;;
+    padding: 30px;
+    min-height: 50vh;
+}
+
+.loginWrapper .forgotPassword {
+    margin: 0;
+    text-decoration: underline;
+}
+
+.loginWrapper .forgotPassword:hover {
+    color: black
+}
+
+@media only screen and (min-width: 200px) and (max-width: 700px) {
+    .loginWrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+        align-items: center;
+        justify-content: center;
+        min-height: auto;
+        color: white;
+        background-color: white;
+    }
+
+    .loginWrapper .formContainer {
+        width: 100%;
+    }
+
+    .loginWrapper form {
+        width: 100%;
+    }
+
+    .loginWrapper .logoContainer {
+        width: 100%;
+    }
+    
+    .loginWrapper .logoContainer > img {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1200px) {
+
+    .loginWrapper .formContainer {
+        width: 100%;
+    }
+
+    .loginWrapper form {
+        width: 100%;
+    }
+
+    .loginWrapper .logoContainer {
+        width: 100%;
+    }
+    
+    .loginWrapper .logoContainer > img {
+        width: 70%;
+    }
+}

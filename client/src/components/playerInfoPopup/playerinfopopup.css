@@ -1,0 +1,387 @@
+p {
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.userInfoPopupOuter {
+    width: 100%;
+    /* height: 100vh; */
+    height: 185vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 3;
+}
+
+.userInfoPopupInner {
+    /* border: 1px solid rgb(124, 122, 122); */
+    display: flex;
+    flex-direction: column;
+    /* position: absolute;
+    top: 10%;
+    left: 45%; */
+    position: sticky;
+    top: 5%;
+    left: 30%;
+    margin: -50px 0 0 -100px;
+    background-color: #17181Bff;
+    padding: 20px;
+    width: 33%;
+    max-width: 33%;
+    min-height: 90vh;
+    max-height: 90vh;
+    border-top-right-radius: 10%;
+    box-shadow: 0 -5px 20px -5px black;
+    padding: 10px 20px;
+    color: white;
+    overflow-y: scroll;
+}
+
+.userInfoPopupInner::-webkit-scrollbar {
+    display: none;
+}
+
+.userInfoPopupInner header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.userInfoPopupInner header h2 {
+    font-weight: 1000;
+}
+
+.playerInfo .userInfoContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.userInfoContainer .profileLikes {
+    background-color: #1E2024ff;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.userInfoContainer .profileEdit {
+    background-color: #1E2024ff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.userInfoPopupInner .userInfo {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+
+.userInfoPopupInner .userInfo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.userInfoPopupInner .userStatsContainer {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #1E2024ff;
+    margin-bottom: 20px;
+}
+
+.userStatsContainer header {
+    margin-bottom: 10px;
+}
+
+.userStats {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.userStats .userStat {
+    font-size: small;
+    padding: 10px;
+    background-color: #17181Bff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userStats .userStat > p {
+    font-size: large;
+}
+
+.userInfoPopupInner .userFavGamesContainer {
+    padding: 20px;
+    background-color: #1E2024ff;
+    overflow-y: scroll;
+    min-height: 350px;
+    max-height: 350px;
+    margin-top: 10px;
+}
+
+.userFavGamesContainer header {
+    margin-bottom: 20px;
+}
+
+.transactionHistory {
+    padding: 20px;
+    background-color: #1E2024ff;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    min-height: 350px;
+    max-height: 350px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.transactionHistory header {
+    margin-bottom: 20px;
+}
+
+.userRecentTransactions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.userFavGamesContainer .userFavGames {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.userInfoPopupInner .userRecentGamesContainer {
+    padding: 20px;
+    background-color: #1E2024ff;
+    margin-top: 20px;
+    overflow-y: scroll;
+    min-height: 350px;
+    max-height: 350px;
+}
+
+.userRecentGamesContainer header {
+    margin-bottom: 20px;
+}
+
+.userRecentGamesContainer .userRecentGames {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.editInfoPopupInner {
+    /* border: 1px solid rgb(124, 122, 122); */
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    margin: -50px 0 0 -100px;
+    background-color: #17181Bff;
+    padding: 20px;
+    width: 33%;
+    max-width: 33%;
+    min-height: 90vh;
+    max-height: 90vh;
+    border-top-right-radius: 10%;
+    box-shadow: 0 -5px 20px -5px black;
+    padding: 10px 20px;
+    color: white;
+    overflow-y: scroll;
+}
+
+.editInfoPopupInner::-webkit-scrollbar {
+    display: none;
+}
+
+.editInfoPopupInner header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.editInfoPopupInner header h2 {
+    font-weight: 1000;
+}
+
+.editInfoContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px
+}
+
+.editInfoPopupInner .userInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.editInfoAvatar {
+    color: white;
+    background-color: #292C32ff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.editInfoUsername {
+    margin-top: 100px;
+}
+
+.editInfoUsername input {
+    width: 70%;
+    height: 35px;
+    font-size: medium;
+    color: white;
+    background-color: #24262Bff;
+    padding: 10px;
+}
+
+.editInfoUsername input:focus {
+    border: 1px solid #55C022ff;
+}
+
+.editInfoButton {
+    width: 45%;
+    height: 40px;
+    font-size: large;
+    font-weight: bolder;
+    margin-top: 40px;
+    background-color: #55C022ff;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.editInfoPopupInner .userInfo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.userFavGame img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.userFavGame {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.userFavGame button {
+    width: 100px;
+    height: 35px;
+    font-size: large;
+    font-weight: bolder;
+    border: none;
+    background-color: #55C022ff;
+    color: white;
+    cursor: pointer;
+}
+
+.transactionHistory table {
+    border-collapse: collapse;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.transactionHistory th {
+    border-bottom: 1px solid rgb(126, 124, 124);
+    font-size: 16px;
+    text-align: left;
+}
+
+.transactionHistory td, th {
+    border: none;
+    text-align: left;
+    padding: 8px;
+}
+
+.transactionHistory td {
+    font-size: 14px;
+}
+
+.userDeleteBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.userDeleteButton {
+    background-color: tomato;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    display: flex; 
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.userDeleteButton:hover {
+    box-shadow: 0 0 10px tomato;
+}
+
+.userBlockButton {
+    background-color: rgb(255, 157, 0);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    display: flex; 
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 100px;
+}
+
+.userBlockButton:hover {
+    box-shadow: 0 0 10px rgb(255, 157, 0);;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 700px) {
+    .userInfoPopupInner {
+        width: 91%;
+        max-width: 100%;
+        left: 24%;
+    }
+
+    .editInfoPopupInner {
+        width: 91%;
+        max-width: 100%;
+        left: 24%;
+    }
+}
