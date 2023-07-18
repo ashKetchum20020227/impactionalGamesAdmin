@@ -6,9 +6,9 @@ These websites were a prototype. These were individually developed by me from sc
 Like the client website, this too is fully responsive. I have added some imaged showcasing it's responsiveness, while describing functionality itself.
 
 
-## Functionality
+# Functionality
 
-1) Admin Login
+## 1) Admin Login
 
    An admin given his credentials can log in to this website.
 
@@ -16,7 +16,7 @@ Like the client website, this too is fully responsive. I have added some imaged 
    
    <img width="1728" alt="Screenshot 2023-07-18 at 8 25 24 AM" src="https://github.com/ashKetchum20020227/impactionalGamesAdmin/assets/135194797/f68c15b7-25eb-41dc-855a-a10d82fb34a9">
 
-2) Admin Home Page
+## 2) Admin Home Page
 
    Various graphs and numbers showing the no. of visits to the website today, no. of registered users, graphs showing the traffic today and another grpah showing the
    plot of registered users vs days.
@@ -47,7 +47,7 @@ Like the client website, this too is fully responsive. I have added some imaged 
 
 <img width="1728" alt="Screenshot 2023-07-18 at 8 43 24 AM" src="https://github.com/ashKetchum20020227/impactionalGamesAdmin/assets/135194797/9f512ad4-50d8-4020-a2c8-d6cd1c97523f">
 
-4) User profile, block, delete user
+## 3) User profile, block, delete user
 
    The admin can see user profile including all his/her transactions, liked games and game history. The admin can also block him temporarily or delete the user's account
    forever.
@@ -61,7 +61,7 @@ Like the client website, this too is fully responsive. I have added some imaged 
    ![Screenshot 2023-07-18 at 8 43 39 AM](https://github.com/ashKetchum20020227/impactionalGamesAdmin/assets/135194797/655fc133-85c5-464d-a6ec-708c25b45ab8)
 
 
-4) Add, Delete Games
+## 4) Add, Delete Games
 
    The main functionality of an admin is to add and delete games that can be played in the client website.
 
@@ -73,7 +73,7 @@ Like the client website, this too is fully responsive. I have added some imaged 
 
 <img width="1728" alt="Screenshot 2023-07-18 at 8 43 55 AM" src="https://github.com/ashKetchum20020227/impactionalGamesAdmin/assets/135194797/f3391496-cb02-45a8-863f-178b20de617b">
 
-5) Global Settings, Change Client Website Theme
+## 5) Global Settings, Change Client Website Theme
 
    The admin can change the theme of client website on special holidays.
 
